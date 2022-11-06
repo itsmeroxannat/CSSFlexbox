@@ -5,34 +5,35 @@
 <title>Untitled Document</title>
 </head>
 	
-<style>
-	@media(min-width:468px;){
-	.container-1{
+<style media="screen">
+	*{
+		box-sizing:border-box;}
+	
+	.container{
+		width:1020px;
+		margin:0 auto;
+	}
+	
+	.flex-container-1{
 		display:flex;
-		/*
-		align-items:flex-start;
-		align-items:flex-end;
-		align-items:center;
-		
-		flex-direction:column;
-	*/
+		flex-flow:row wrap;
+		align-items:stretch;
+		background-color:cadetblue;
 		justify-content:space-around;
 	}
 	
-	.container-2{
+	.flex-container-2{
 		display:flex;
-		/*
-		justify-content:flex-start;
-		justify-content:flex-end;
-		justify-content:center;
-		*/
+		flex-flow:row wrap;
+		align-items:stretch;
 		justify-content:space-around;
 	}	
-	}
 	
-	.container-3{
+	
+	.flex-container-3{
 		display:flex;
-		flex-wrap:wrap;
+		flex-flow:row wrap;
+		align-items:stretch;
 		justify-content:space-between;
 	}
 	
@@ -40,91 +41,123 @@
 	.container-1 div, .container-2 div, .container-3 div{ 
 		border:3px #900D10 solid;
 		padding:10px;
+		div class=""
 	 }
-
-	.box-1{
-		flex-1;
-		order:1;
-		
-	}
-	.box-2{
-		flex-1;
-		order:2;
-	}
-	.box-3{
-		flex-1;
-		order:3;
-		
-	}
 	
-	.container-2-box{
-		flex-basis:27%;
-	}
 	
-	.container-3-box{
-		flex-basis:12%
-	}
 	</style>
 	
-	<h2 style="background-color:sandybrown">Flexbox Sample</h2>
+	<style>
+		
+		body{background-color: #F3E99B}
+		h2{color:#900d10;}
+		h4{color:#900d10}
+		p{color:#900d10}
+		.flex-container> div{
+			background-color:cadetblue;
+			margin:10px;
+			padding:0 10px 0 10px;
+		}
+		
+		header{
+			width:100px;
+			height:30px;
+			text-align:center;
+			padding:20px;
+			background-color:sandybrown;
+		}
+	
+		
+		}
+		
+		nav{
+			width:100px;
+			height:50px;
+			margin:10px 0 10px 0;
+			padding-top:10px;
+			background-color:darkorange
+		}
+		
+		@media (max-width:1019px){
+			.container{width:90%;}
+			
+			.makeMeStack{width:90%;
+			}
+		}
+	
+		footer{
+			width:100px;
+			height:50px;
+			background-color:sandybrown;
+		}
+		
+	</style>
+	
+
+	<h2 style="background-color:sandybrown">Flexbox Sample: European Butterflies</h2>
+	<div style="border:1px solid black"><a href="https://butterfly-conservation.org/european-butterflies/a-to-z">Click the link to match butterfly name to it's picture!</a></div><br>
+	
 	
 	<div class="container-1">
 	<div class="box-1">
-		<h4>Like A Tattoo</h4>
-		<p>Song Lyics:</p>
+		<h4>&#128144Alcon Blue</h4>
+		<p>Phengaris alcon</p>
 		</div>
 		
 		<div class="box-2">
-		<h4>The Sweetest Taboo</h4>
-		<p>Song Lyrics:</p>
+		<h4>&#128144Apollo</h4>
+		<p>Parnassius apollo</p>
 		</div>
 		
 		<div class="box-3">
-		<h4>Kiss of Life</h4>
-		<p>Song Lyrics:</p>
+		<h4>&#128144Black-veined White</h4>
+		<p>Aporia crataegi</p>
 		</div></div>
 	
 	<div class="container-2">
 	<div class="container-2box">
-	<h4>Box Four</h4>
-	<p>Cant decide what I'd like here.</p>
+	<h4>&#128144Camberwell Beauty<br>
+		Mourning Cloak</h4>
+	<p>Nymphalis antiopa</p>
 		</div>
 	<div class="container-2box">
-	<h4>Box Five</h4>
-	<p>Cant decide what I'd like here.</p>
+	<h4>&#128144Cleopatra</h4>
+	<p>Gonepteryx cleopatra</p>
 		</div>
 	<div class="container-2box">
-	<h4>Box Six</h4>
-	<p>Cant decide what I'd like here.</p>
+	<h4>&#128144Danube Clouded Yellow</h4>
+	<p>Colias myrmidone</p>
 		</div></div>
 	
 	<div class="container-3">
 	<div class="container-3-box">
-		<h4>Box Seven</h4>
-		<p>More Text</p>
+		<h4>&#128144Dusty Large Blue</h4>
+		<p>Phengaris nausithous</p>
 		</div>
 	<div class="container-3-box">
-		<h4>Box Eight</h4>
-		<p>More Text</p>
+		<h4>&#128144Large Copper</h4>
+		<p>Lycaena dispar</p>
 		</div>
 	<div class="container-3-box">
-		<h4>Box Nine</h4>
-		<p>More Text</p>
+		<h4>&#128144Long-tailed Blue</h4>
+		<p>Lampides boeticus</p>
 		</div>
 	<div class="container-3-box">
-		<h4>Box Ten</h4>
-		<p>More Text</p>
+		<h4>&#128144Lesser Purple Empeeror</h4>
+		<p>Apatura ilia</p>
 		</div>
 	<div class="container-3-box">
-		<h4>Box Eleven</h4>
-		<p>More Text</p>
+		<h4>&#128144Marbled Fritillary</h4>
+		<p>Brenthis daphne</p>
 		</div>
 	<div class="container-3-box">
-		<h4>Box Eight</h4>
-		<p>More Text</p>
+		<h4>&#128144Nettle-tree Butterfly</h4>
+		<p>Libythea celtis</p>
 		</div></div>
+	
+	
 		
 <body>
-	
+	<h3 style="background-color:darkorange">Copyrights 2022 Roxanna Torres</h3>
 </body>
 </html>
